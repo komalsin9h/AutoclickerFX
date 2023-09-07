@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "860178102527",
+    "project_id": "autoclickerfx-fd6ec",
+    "storage_bucket": "autoclickerfx-fd6ec.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:860178102527:android:723b2c9483d728c46fb4ca",
+        "android_client_info": {
+          "package_name": "com.andev.template"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "860178102527-0ccakqdu91igtd2gc4vog5sgnbl0o4he.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCTJ2UQtYYjCLBtVTvV9C7ST7U2dFuQd2k"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "860178102527-0ccakqdu91igtd2gc4vog5sgnbl0o4he.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

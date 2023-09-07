@@ -1,0 +1,303 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent">
+
+	<LinearLayout
+		android:gravity="center"
+		android:orientation="vertical"
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		android:padding="15dp">
+
+<LinearLayout
+		android:gravity="center"
+		android:orientation="horizontal"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		>
+<TextView
+							android:text="WRITE:"
+							android:layout_width="wrap_content"
+							android:layout_height="wrap_content"
+							android:layout_margin="1dp"/>
+<TextView
+					android:textSize="15sp"
+					android:text="null"
+					android:textIsSelectable="true"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:id="@+id/rmtUid"
+					android:textColor="#FF0F00"
+					android:background="@drawable/border"
+/>
+</LinearLayout>
+<LinearLayout
+						android:orientation="vertical"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:padding="12dp"
+						android:gravity="center"
+						android:layout_margin="15dp">
+
+						<TextView
+							android:textStyle="bold"
+							android:text="(ENTER REMOTE UID)\n AND SEND WRITE REQUEST"
+							android:layout_width="wrap_content"
+							android:layout_height="wrap_content"/>
+
+						<EditText
+							android:layout_width="wrap_content"
+							android:ems="9"
+							android:layout_height="wrap_content"
+							android:layout_marginTop="4dp"
+							android:layout_marginBottom="4dp"
+							android:hint="ENTER REMOTE WRITE UID"
+							android:id="@+id/ruid"/>
+
+						<Button
+							android:layout_width="wrap_content"
+							android:layout_height="wrap_content"
+							android:text="SET REMOTE WRITE UID"
+							android:id="@+id/requestToRemoteBtn"/>
+
+					</LinearLayout>
+		<LinearLayout
+			android:gravity="center"
+			android:orientation="vertical"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content">
+
+			<Button
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:text="TEST"
+				android:id="@+id/test"
+				android:textStyle="bold"/>
+
+			<LinearLayout
+				android:orientation="vertical"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:padding="10dp"
+				android:gravity="top|center_horizontal"
+				android:id="@+id/remot"
+				android:layout_margin="10dp"/>
+
+		</LinearLayout>
+
+		<LinearLayout
+			android:orientation="horizontal"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:gravity="center"
+			android:layout_marginBottom="1dp">
+
+			<Button
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:text="SHOW REMOTE BUTTONS"
+				android:id="@+id/makeBtns"/>
+
+			<EditText
+				android:layout_width="match_parent"
+				android:inputType="number"
+				android:layout_height="wrap_content"
+				android:ems="3"
+				android:id="@+id/noOfBtn"
+				android:layout_marginLeft="10dp"
+				android:text="3"/>
+
+		</LinearLayout>
+
+		<Button
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:text="FLOAT/REMOVE BUTTONS"
+			android:id="@+id/gen_float_btn"/>
+			
+			<LinearLayout
+			android:background="@drawable/border"
+			android:padding="15dp"
+			android:orientation="vertical"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:layout_margin="5dp"
+			android:gravity="center">
+
+			<EditText
+				android:layout_width="match_parent"
+				android:ems="10"
+				android:layout_height="wrap_content"
+				android:id="@+id/sendRqsEdtxt"
+				android:hint="Enter Target UID"
+				android:gravity="center"
+				android:textSize="11sp"/>
+				
+				<Button
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:text="Request to remote join"
+					android:id="@+id/sendRqsBtn"
+					android:textSize="10sp"
+					android:textColor="#dd0d00"
+					android:layout_marginLeft="4dp"/>
+					
+		</LinearLayout>
+			
+		<LinearLayout
+			android:background="@drawable/border"
+			android:padding="15dp"
+			android:orientation="vertical"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:layout_margin="5dp"
+			android:gravity="center">
+
+			<EditText
+				android:layout_width="match_parent"
+				android:ems="10"
+				android:layout_height="wrap_content"
+				android:id="@+id/clientUidw"
+				android:hint="Enter UID of foreign REMOTE"
+				android:gravity="center"
+				android:textSize="11sp"/>
+
+			<TextView
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:text="Allow above UID's remote to DISPATCH clicks parallelly alongwith this REMOTE."
+				android:textSize="10sp"
+				android:gravity="center"/>
+
+			<LinearLayout
+				android:padding="3dp"
+				android:orientation="horizontal"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:gravity="center">
+
+				<Button
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:text="Give Write Access"
+					android:id="@+id/addRemoteClientw"
+					android:textSize="10sp"/>
+
+				<Button
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:text="DENY Access."
+					android:id="@+id/rmvRemoteClientw"
+					android:textSize="10sp"
+					android:textColor="#dd0d00"
+					android:layout_marginLeft="4dp"/>
+
+			</LinearLayout>
+
+		</LinearLayout>
+
+		<LinearLayout
+			android:background="@drawable/border"
+			android:padding="15dp"
+			android:orientation="vertical"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:layout_margin="5dp"
+			android:gravity="center">
+
+			<EditText
+				android:layout_width="match_parent"
+				android:ems="10"
+				android:layout_height="wrap_content"
+				android:id="@+id/clientUid"
+				android:hint="Enter UID of foreign CLICKER"
+				android:gravity="center"
+				android:textSize="11sp"/>
+
+			<TextView
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:text="Allow above UID's clicker to READ clicks from this REMOTE."
+				android:textSize="10sp"
+				android:gravity="center"/>
+
+			<LinearLayout
+				android:padding="3dp"
+				android:orientation="horizontal"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:gravity="center">
+
+				<Button
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:text="Give Read Access"
+					android:id="@+id/addRemoteClient"
+					android:textSize="10sp"/>
+
+				<Button
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:text="Deny Access"
+					android:id="@+id/rmvRemoteClient"
+					android:textSize="10sp"
+					android:textColor="#dd0d00"
+					android:layout_marginLeft="4dp"/>
+
+			</LinearLayout>
+
+		</LinearLayout>
+
+<ScrollView
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:layout_margin="1dp"
+			android:padding="1dp"
+			android:layout_gravity="center_horizontal">
+
+					
+			<LinearLayout
+				android:layout_margin="8dp"
+				android:orientation="vertical"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:padding="5dp"
+				android:gravity="center">
+
+				<TextView
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:text="REMOTE PRIVILAGES DASHBOARD"
+					android:textAppearance="?android:attr/textAppearanceSmall"
+					android:gravity="center"
+					android:textSize="18sp"
+					android:textStyle="bold"
+					android:layout_marginBottom="5dp"
+					android:textColor="#dd0000"
+					/>
+
+				<TextView
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:text="manage permissions of your remote access to other remotes and clients"
+					android:textAppearance="?android:attr/textAppearanceSmall"
+					android:gravity="center"
+					/>
+
+				
+				<!-- res/layout/example_activity.xml android:class=".RemotePrivilagesFragment"-->
+				<androidx.fragment.app.FragmentContainerView
+					xmlns:android="http://schemas.android.com/apk/res/android"
+					android:id="@+id/fragment_container_view_prvlgs"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:padding="2dp"
+					 />
+			</LinearLayout>
+		</ScrollView>
+	</LinearLayout>
+
+</ScrollView>
+

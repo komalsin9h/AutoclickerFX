@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">AutoclickerFX</string>
+	<string name="not_title">AutoclickerFX</string>
+	<string name="not_text">Service Enabled</string>
+	<string name="key">komal</string>
+	<string name="accessibility_service_label">AUTOCLICKER FX</string>
+	<string name="accessibility_service_description">MANDATORY This permission is required and only way to dispatch clicks in android on behalf of users...</string>
+	
+	
+	<string name="db_uri">https://autoclickerfx-fd6ec-default-rtdb.asia-southeast1.firebasedatabase.app</string>
+	<string name="prvlg">prvlg</string>
+	<string name="rqs">rqs</string>
+	<string name="read">read</string>
+	<string name="write">write</string>
+	
+	</resources>

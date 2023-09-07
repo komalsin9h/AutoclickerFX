@@ -1,0 +1,376 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:orientation="vertical"
+	android:gravity="center"
+	>
+
+	<LinearLayout
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		android:orientation="vertical"
+		android:gravity="center"
+		android:layout_marginTop="17dp">
+
+		<LinearLayout
+			android:orientation="vertical"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:layout_margin="0dp"
+			android:padding="0dp"
+			android:gravity="center">
+
+			<Button
+				android:padding="17dp"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:drawableLeft="@drawable/avatar_ico"
+				android:text=" ACCOUNT"
+				android:layout_margin="5dp"
+				android:id="@+id/macc"/>
+
+			<TextView
+				android:text="Logined: False"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_margin="0dp"
+				android:id="@+id/loginStatus"/>
+
+			<LinearLayout
+				android:orientation="horizontal"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:gravity="top">
+
+				<TextView
+					android:text="Your Current UID:"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:gravity="center"
+					android:layout_marginTop="2dp"/>
+
+				<TextView
+					android:padding="4dp"
+					android:text="null"
+					android:textIsSelectable="true"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:layout_marginTop="2dp"
+					android:layout_marginLeft="2dp"
+					android:id="@+id/myuid1"/>
+
+			</LinearLayout>
+
+<!--android:background="@drawable/border"-->
+				<androidx.fragment.app.FragmentContainerView
+					xmlns:android="http://schemas.android.com/apk/res/android"
+					android:id="@+id/fragment_container_view_rqsts"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:padding="3dp"
+					android:layout_margin="5dp"
+					android:gravity="center"
+					 />
+				<ProgressBar
+			android:max="100"
+			style="?android:attr/progressBarStyleHorizontal"
+			android:visibility="gone"
+			android:id="@+id/progressbar"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content" />
+		</LinearLayout>
+
+		<LinearLayout
+			android:orientation="vertical"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:layout_margin="8dp"
+			android:padding="2dp"
+			android:gravity="center">
+
+			<Button
+				android:layout_margin="2dp"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:text="CONFIGURE CLICKING LOCATIONS"
+				android:id="@+id/floatbtn"/>
+
+			<Button
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:text="REMOTE"
+				android:id="@+id/rmt"
+				android:layout_margin="2dp"/>
+
+		</LinearLayout>
+
+		<LinearLayout
+			android:orientation="vertical"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_margin="4dp"
+			android:padding="3dp"
+			android:gravity="center">
+
+			<TextView
+				android:textStyle="bold"
+				android:text="CLICKER DASHBOARD"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:textSize="17sp"
+				android:layout_margin="2dp"/>
+
+			<LinearLayout
+				android:orientation="vertical"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_margin="2dp"
+				android:padding="1dp"
+				android:gravity="bottom|center_horizontal">
+
+				<LinearLayout
+					android:orientation="vertical"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:layout_margin="1dp"
+					android:padding="1dp"
+					android:gravity="center">
+
+					<LinearLayout
+						android:orientation="vertical"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:gravity="center">
+
+						<TextView
+							android:text="UID for receiving clicks."
+							android:layout_width="wrap_content"
+							android:layout_height="wrap_content"
+							android:layout_margin="1dp"/>
+<LinearLayout
+		android:gravity="center"
+		android:orientation="horizontal"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		>
+<TextView
+							android:text="READ:"
+							android:layout_width="wrap_content"
+							android:layout_height="wrap_content"
+							android:layout_margin="1dp"/>
+						<TextView
+							android:textSize="15sp"
+							android:background="@drawable/border"
+							android:padding="4dp"
+							android:text="null"
+							android:textIsSelectable="true"
+							android:layout_width="wrap_content"
+							android:layout_height="wrap_content"
+							android:layout_marginTop="2dp"
+							android:layout_marginLeft="2dp"
+							android:id="@+id/recieveuid"
+							android:textColor="#FF0F00"/>
+</LinearLayout>
+					</LinearLayout>
+
+					<LinearLayout
+						android:orientation="vertical"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:padding="12dp"
+						android:gravity="center"
+						android:layout_margin="15dp">
+
+						<TextView
+							android:textStyle="bold"
+							android:text="(ENTER REMOTE UID)\n AND SEND REQUEST TO JOIN"
+							android:layout_width="wrap_content"
+							android:layout_height="wrap_content"/>
+
+						<EditText
+							android:layout_width="wrap_content"
+							android:ems="9"
+							android:layout_height="wrap_content"
+							android:layout_marginTop="4dp"
+							android:layout_marginBottom="4dp"
+							android:hint="ENTER REMOTE'S UID (REQUIRED)"
+							android:id="@+id/ruid"/>
+
+						<Button
+							android:layout_width="wrap_content"
+							android:layout_height="wrap_content"
+							android:text="SEND CONNECTION REQUEST\n TO TARGET REMOTE"
+							android:id="@+id/requestToRemoteBtn"/>
+
+					</LinearLayout>
+
+				</LinearLayout>
+
+			</LinearLayout>
+
+			<LinearLayout
+				android:orientation="vertical"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:gravity="center_horizontal">
+
+				<TextView
+					android:text="Delay between clicks (ms):"
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:layout_margin="2dp"
+					android:gravity="center"/>
+
+				<EditText
+					android:id="@+id/speed"
+					android:layout_width="wrap_content"
+					android:inputType="number"
+					android:layout_height="wrap_content"
+					android:ems="3"
+					android:text="27"
+					android:gravity="center"
+					android:hint="e.g. 27"/>
+
+				<TextView
+					android:text="Clicking cycles:"
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:layout_margin="2dp"
+					android:gravity="center"/>
+
+				<EditText
+					android:id="@+id/cycles"
+					android:layout_width="wrap_content"
+					android:inputType="number"
+					android:layout_height="wrap_content"
+					android:ems="3"
+					android:text="2"
+					android:gravity="center"
+					android:hint="e.g. 2"/>
+
+			</LinearLayout>
+
+			<LinearLayout
+				android:layout_margin="5dp"
+				android:padding="5dp"
+				android:gravity="center"
+				android:orientation="vertical"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content">
+
+				<Button
+					android:id="@+id/forbtn"
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:text="START/STOP CLICKING CLIENT"
+					android:padding="15dp"/>
+
+				<LinearLayout
+					android:orientation="vertical"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:gravity="center">
+					<TextView
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:text="Bind VOLUME Keys to quickly \nSTART/STOP Service:"
+						android:textAppearance="?android:attr/textAppearanceSmall"
+						android:padding="2dp"
+						android:gravity="center"/>
+
+					<com.google.android.material.switchmaterial.SwitchMaterial
+
+    android:id="@+id/vup"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="BIND VOLUME UP"
+    android:textOff="OFF"
+    android:textOn="ON"
+ />
+    <com.google.android.material.switchmaterial.SwitchMaterial
+
+    android:id="@+id/vdn"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="BIND VOLUME DOWN" 
+android:checked="true"
+android:textOff="OFF"
+    android:textOn="ON"
+/>
+
+				</LinearLayout>
+
+			</LinearLayout>
+
+		</LinearLayout>
+
+		<LinearLayout
+			android:layout_marginTop="10dp"
+			android:layout_marginBottom="47dp"
+			android:orientation="vertical"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:gravity="left|center_vertical">
+
+			<Button
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:text="Accessibilty Permission"
+				android:id="@+id/accbtn"/>
+
+			<LinearLayout
+				android:orientation="horizontal"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_margin="3dp"
+				android:padding="3dp"
+				android:gravity="left|center_vertical">
+
+				<TextView
+					android:text="SCREEN TICKER TEXT: \n(Short text for denoting\n clicking windows, optional)"
+					android:gravity="left|center_vertical"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:layout_margin="2dp"/>
+
+				<EditText
+					android:gravity="right|center_vertical"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:ems="3"
+					android:hint=" "/>
+
+			</LinearLayout>
+
+			<LinearLayout
+				android:orientation="horizontal"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_margin="3dp"
+				android:padding="3dp"
+				android:gravity="left|center_vertical">
+
+				<TextView
+					android:text="POINTS TICKER TEXT: \n(short text for denoting\n clicking points, optional)"
+					android:gravity="left|center_vertical"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:layout_margin="2dp"/>
+
+				<EditText
+					android:gravity="right|center_vertical"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:ems="3"
+					android:hint=" "/>
+
+			</LinearLayout>
+
+		</LinearLayout>
+
+	</LinearLayout>
+
+</ScrollView>
+

@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<style name="AppTheme" parent="Theme.Material3.Light">
+        <item name="colorPrimary">@color/material_teal_500</item>
+        <item name="colorPrimaryDark">@color/material_teal_700</item>
+        <item name="colorAccent">@color/material_teal_a700</item>
+ </style>
+</resources>
+
+
+
+
+
+	<!--style name="AppTheme" parent="Theme.MaterialComponents.DayNight">
+		
+	</style
+	
+
+
+	<item name="fontFamily">@font/roboto_mono</item>
+    <item name="android:fontFamily">@font/roboto_mono</item>
+	</style>
+		
+		
+	<item name="colorPrimary">@color/colorPrimary</item>
+	<item name="colorPrimaryVariant">@color/colorPrimaryVariant</item>
+	<item name="colorOnPrimary">@color/colorOnPrimary</item>
+	<item name="colorSecondary">@color/colorSecondary</item>
+	<item name="colorSecondaryVariant">@color/colorSecondaryVariant</item>
+	<item name="colorOnSecondary">@color/colorOnSecondary</item>
+	<item name="colorError">@color/colorError</item>
+	<item name="colorOnError">@color/colorOnError</item>
+	<item name="colorSurface">@color/colorSurface</item>
+	<item name="colorOnSurface">@color/colorOnSurface</item>
+	<item name="android:colorBackground">@color/background</item>
+	<item name="colorOnBackground">@color/colorOnBackground</item>
+	
+
+
+	<color name="colorPrimary">>#212121</color>
+	<color name="colorPrimaryVariant">#000000</color>
+	<color name="colorOnPrimary">#FFFFFF</color>
+	<color name="colorSecondary">#2962FF</color>
+	<color name="colorSecondaryVariant">#0039CB</color>
+	<color name="colorOnSecondary">#FFFFFF</color>
+	<color name="colorError">#F44336</color>
+	<color name="colorOnError">#FFFFFF</color>
+	<color name="colorSurface">#FFFFFF</color>
+	<color name="colorOnSurface">#212121</color>
+	<color name="background">#FAFAFA</color>
+	<color name="colorOnBackground">#212121</color>
+
+	<color name="white">#212121</color>
+	<color name="black">#FAFAFA</color>
+	<color name="green">#212121</color>
+	<color name="red">#212121</color>
+	<color name="blue">#212121</color>	
+	
+		
+	<style name="AppTheme.NoActionBar" parent="Theme.AppCompat">
+	<item name="windowActionBar">false</item>
+	<item name="windowNoTitle">true</item>
+
+	<item name="android:windowLightNavigationBar">true</item>
+	<item name="android:windowDrawsSystemBarBackgrounds">true</item>
+	<item name="android:navigationBarColor">@color/white</item>
+
+	<item name="android:windowLightStatusBar">true</item>
+	<item name="android:statusBarColor">@android:color/white</item>
+
+	<item name="colorPrimary">@color/colorPrimary</item>
+	<item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+	<item name="colorAccent">@color/colorAccent</item>
+
+	<item name="android:background">@color/white</item>
+	<item name="android:windowBackground">@color/white</item>
+	<item name="android:colorBackground">@color/white</item>
+
+
+
+	<item name="buttonStyle">@style/myButton</item>
+	<item name="android:textViewStyle">@style/myTextView</item>
+	<item name="editTextStyle">@style/myEditTextStyle</item>
+
+	</style>
+	-->

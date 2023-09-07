@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="vertical"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:gravity="center"
+	>
+	<LinearLayout
+		android:layout_marginTop="20dp"
+		android:padding="12dp"
+		android:gravity="center"
+		android:orientation="horizontal"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content">
+	<TextView
+		android:textAllCaps="true"
+		android:textSize="15sp"
+		android:textStyle="bold"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:id="@+id/loginStatus"/>
+	<Button
+		android:layout_marginLeft="5dp"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:text="LOGOUT"
+		android:id="@+id/logout"/>
+	</LinearLayout>
+	<LinearLayout
+		android:orientation="horizontal"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content">
+
+		<TextView
+			android:textSize="15sp"
+			android:textStyle="bold"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:text="Your UserID:"
+			android:textAppearance="?android:attr/textAppearanceSmall"
+			android:layout_margin="3dp"/>
+
+		<TextView
+			android:padding="4dp"
+			android:text="null"
+			android:textIsSelectable="true"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:id="@+id/uid"
+			android:layout_margin="3dp"/>
+
+	</LinearLayout>
+	<LinearLayout
+		android:orientation="vertical"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_marginTop="20dp"
+		android:padding="2dp"
+		android:gravity="center">
+		<TextView
+			android:layout_marginTop="30dp"
+			android:textStyle="bold"
+			android:textSize="15sp"
+			android:text="Enter Your Mobile Number\n(INCLUDING COUNTRY CODE):"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_margin="0dp"
+		/>
+		<EditText
+			android:textStyle="bold"
+			android:textSize="20sp"
+			android:hint="+91 XXXXXXXXXX"
+			android:layout_height="wrap_content"
+			android:layout_width="wrap_content"
+			android:ems="10"
+			android:id="@+id/idEdtPhoneNumber"
+			android:text="+91"
+		/>
+	</LinearLayout>
+
+	<Button
+		android:layout_margin="10dp"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:text="SEND OTP"
+		android:id="@+id/idBtnGetOtp"/>
+	<LinearLayout
+		android:orientation="horizontal"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_marginTop="20dp"
+		android:padding="2dp"
+		android:gravity="center">
+		<EditText
+			android:textStyle="bold"
+			android:hint="ENTER OTP"
+			android:layout_width="wrap_content"
+			android:ems="10"
+			android:layout_height="wrap_content"
+			android:id="@+id/idEdtOtp"
+			android:textSize="20sp"/>
+	</LinearLayout>
+	<Button
+		android:layout_margin="10dp"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:text="VERIFY OTP"
+		android:id="@+id/idBtnVerify"/>
+
+	<TextView
+		android:layout_margin="10dp"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:textAppearance="?android:attr/textAppearanceMedium"
+		android:id="@+id/print"/>
+
+</LinearLayout>
+

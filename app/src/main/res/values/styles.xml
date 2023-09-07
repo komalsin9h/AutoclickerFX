@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	
+</resources>
+
+
+
+<!--
+	
+	resources>
+	<style name="myButton" parent="@android:style/Widget.Button">
+        <item name="android:gravity">center_vertical|center_horizontal</item>
+        <item name="android:textColor">#fff</item>
+        <item name="android:textSize">15dip</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:background">@drawable/button</item>
+        <item name="android:focusable">true</item>
+        <item name="android:clickable">true</item>
+		<item name="android:gravity">center</item>
+		<item name="android:padding">13dp</item>  
+    </style>
+	<style name="myTextView" parent="@android:style/Widget.TextView">            
+		<item name="android:textColor">#fff</item>
+		<item name="android:textColorLink">#00f</item>
+		<item name="android:textSize">11sp</item>
+		<item name="android:textStyle">normal</item>         
+		<item name="android:gravity">center_vertical|center_horizontal</item>
+		<item name="android:padding">1dp</item>  
+		<item name="android:gravity">center</item>  
+		<item name="android:textColorHighlight">#888</item>  
+	</style>
+	<style name="textViewWithPadding" parent="@android:style/Widget.TextView">            
+		
+		<item name="android:textStyle">bold</item>         
+		<item name="android:gravity">center_vertical|center_horizontal</item>
+		<item name="android:padding">500dp</item>  
+		<item name="android:textColorHighlight">#888</item>  
+	</style>
+	<style name="myEditTextStyle" parent="@android:style/Widget.EditText">
+		<item name="android:background">@drawable/bg_edittext</item>
+		<item name="android:textColor">#fff</item>
+		<item name="android:padding">5dp</item>  
+		<item name="android:gravity">center</item>  
+		<item name="android:textSize">13sp</item>
+		<item name="android:textColorHighlight">#0f0</item>  
+	</style>
+</resources>
+
+-->
+
+
